@@ -101,4 +101,8 @@
     .rodape {
         margin-top: 24.55em;
     }
+
+    .container__secundario{
+        display = none;
+    }
 }
