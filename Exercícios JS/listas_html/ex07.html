@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <style>
+        .item {
+            background-color: rgb(226, 218, 218);
+            color: black;
+            text-decoration: none;
+            padding: 1em;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .item:hover {
+            color: rgb(194, 28, 28);
+        }
+
+        .cabecalho {
+            margin-top: 2em;
+            margin-bottom: 3em;
+        }
+
+        .titulo {
+            font-family: 'New Amsterdam', sans-serif;
+        }
+    </style>
+    <header class="cabecalho">
+        <a href="../index.html" class="item">HOME</a>
+    </header>
+    <h2 class="titulo">Escreva uma função que permita contar o número de vogais contidas em uma string fornecida pelo
+        usuário.
+        Por exemplo, o usuário informa a string “Beterraba”, e a função retorna o número 4 (há 4 vogais nessa palavra).
+    </h2>
+    <input type="text" id="caixa_texto" placeholder="Digite aqui" onkeypress="return lettersOnly(event);">
+    <button id="botao__calculo">Calcular número de vogais</button>
+    <button id="botao__limpeza">Limpar tudo</button>
+    <p id="texto"></p>
+
+    <script src="../scripts_JS/ex07.js"></script>
+    <script>
+        function lettersOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
+                ((evt.which) ? evt.which : 0));
+            if (charCode > 31 && (charCode < 65 || charCode > 90) &&
+                (charCode < 97 || charCode > 122)) {
+                // alert("Enter letters only.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

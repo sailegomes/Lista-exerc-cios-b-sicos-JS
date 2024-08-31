@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../styles/exercicio10.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="../index.html" class="item">HOME</a>
+    </header>
+    <main>
+        <h2 class="titulo">Escreva uma função em JavaScript que conte quantas vezes um caractere aparece em uma string.
+            Tanto o caractere quanto a string devem ser fornecidos pelo usuário.</h2>
+        <div class="container">
+            <div class="container__inputs">
+                <div>
+                    <label>String para avaliação: </label>
+                    <input type="text" placeholder="Digite uma palavra" onkeypress="return lettersOnly(event);" id="string">
+                </div>
+                <div>
+                    <label>Caractere a ser avaliado: </label>
+                    <input type="text" placeholder="Digie uma letra" onkeypress="return lettersOnly(event);" id="letra">
+                </div>
+            </div>
+            <hr size="80px">
+            <div class="container__botoes">
+                <button id="calculo">Calcular</button>
+                <button id="limpar">Limpar tudo</button>
+            </div>
+        </div>
+        <p id="texto"></p>
+    </main>
+
+
+
+    <script src="../scripts_JS/ex10.js"></script>
+    <script>
+        function lettersOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
+                ((evt.which) ? evt.which : 0));
+            if (charCode > 31 && (charCode < 65 || charCode > 90) &&
+                (charCode < 97 || charCode > 122)) {
+                // alert("Enter letters only.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

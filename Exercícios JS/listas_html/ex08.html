@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <style>
+        .item {
+            background-color: rgb(226, 218, 218);
+            color: black;
+            text-decoration: none;
+            padding: 1em;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .item:hover {
+            color: rgb(194, 28, 28);
+        }
+
+        .cabecalho {
+            margin-top: 2em;
+            margin-bottom: 3em;
+        }
+
+        .caixas,
+        .botoes {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .caixa__texto::-webkit-inner-spin-button,
+        .caixa__texto::-webkit-outer-spin-button {
+            display: none;
+        }
+
+        .botao {
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+            width: 37%;
+        }
+
+        .botoes {
+            margin-top: 1em;
+        }
+
+        .caixas {
+            margin-top: 1em;
+        }
+
+        .titulo {
+            font-family: 'New Amsterdam', sans-serif;
+        }
+    </style>
+    <header class="cabecalho">
+        <a href="../index.html" class="item">HOME</a>
+    </header>
+    <h2 class="titulo">Escreva uma função que informe o retorno de um investimento (montante) com base nos valores
+        do capital inicial, tempo em meses e taxa de juros mensal, fornecidos pelo usuário.
+    </h2>
+
+
+    <div class="container">
+        <div class="caixas">
+            <label>Capital inicial:
+                <input type="number" class="caixa__texto" placeholder="Digite um número" id="capital">
+            </label>
+
+            <label>Taxa de juros a.m. (%):
+                <input type="number" class="caixa__texto" placeholder="Digite um número" id="taxa">
+            </label>
+
+            <label>Tempo do investimento (em meses):
+                <input type="number" class="caixa__texto" placeholder="Digite um número" id="tempo">
+            </label>
+            <p id="texto"></p>
+        </div>
+        <hr size="120px">
+        <div class="botoes">
+            <button class="botao" id="calcular">Calcular montante</button>
+            <button class="botao" id="limpar">Limpar tudo</button>
+        </div>
+    </div>
+
+
+    <script src="../scripts_JS/ex08.js"></script>
+</body>
+
+</html>
