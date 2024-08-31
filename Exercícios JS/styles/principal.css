@@ -65,7 +65,7 @@
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .titulo_principal {
         margin-top: 0.5em;
     }
