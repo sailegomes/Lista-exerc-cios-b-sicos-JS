@@ -62,7 +62,7 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .titulo_principal {
         margin-top: 0.5em;
     }
