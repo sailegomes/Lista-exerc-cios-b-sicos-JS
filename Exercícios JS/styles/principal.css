@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+
+body{
+    height: 1vh;
+}
+
 .titulo_principal {
     text-align: center;
     font-size: 50px;
@@ -24,6 +29,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    height: 40vh;
 }
 
 .item {
@@ -48,7 +54,6 @@
 }
 
 .rodape {
-    margin-top: 11em;
     background-color: rgb(194, 28, 28);
     padding: 1.45em 0;
     gap: 10px;
@@ -65,7 +70,16 @@
     display: none;
 }
 
-@media screen and (max-width: 500px) {
+
+.section__botoes{
+    height: 10vh;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
     .titulo_principal {
         margin-top: 0.5em;
     }
@@ -95,9 +109,11 @@
     }
 
     .rodape {
-        margin-top: 12em;
+        margin-top: 25em;
     }
 }
+
+
 
 @media screen and (min-width: 1024px){
     .titulo_principal {
@@ -112,14 +128,16 @@
     }
 
     .rodape {
-        margin-top: 43.6em;
+        margin-top: 52.6em;
     }
 }
 
 
+
+
 @media screen and (min-width: 1700px) {
     .rodape {
-        margin-top: 24.55em;
+        margin-top: 30.8em;
     }
 
     .container__secundario{

@@ -12,7 +12,7 @@ function numero_primo(valor) {
     else {
         for (i = 2; i < valor; i++) {
             if (valor % i == 0) {
-                cont = 1
+                cont++
                 break;
             }
         }
